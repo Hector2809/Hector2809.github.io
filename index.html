@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <h1>Ejercicios JavaScript</h1>
+
+    <!-- Ejercicio 1: Inversión en banco -->
+    <div class="container">
+        <h2>Inversión en Banco</h2>
+        <label for="capital">Ingrese su capital:</label>
+        <input type="number" id="capital" placeholder="Capital">
+        <button onclick="calcularInteres()">Calcular ganancia</button>
+        <p id="resultadoInversion"></p>
+    </div>
+
+    <!-- Ejercicio 2: Sueldo de Vendedor -->
+    <div class="container">
+        <h2>Sueldo de Vendedor</h2>
+        <label for="sueldoBase">Sueldo base:</label>
+        <input type="number" id="sueldoBase" placeholder="Sueldo base">
+        
+        <label for="venta1">Venta 1:</label>
+        <input type="number" id="venta1" placeholder="Monto de la Venta 1">
+        
+        <label for="venta2">Venta 2:</label>
+        <input type="number" id="venta2" placeholder="Monto de la Venta 2">
+        
+        <label for="venta3">Venta 3:</label>
+        <input type="number" id="venta3" placeholder="Monto de la Venta 3">
+        
+        <button onclick="calcularComision()">Calcular sueldo total</button>
+        <p id="resultadoVendedor"></p>
+    </div>
+
+    <!-- Ejercicio 3: Descuento en Tienda -->
+    <div class="container">
+        <h2>Descuento en Tienda</h2>
+        <label for="totalCompra">Total de la compra:</label>
+        <input type="number" id="totalCompra" placeholder="Total">
+        <button onclick="calcularDescuento()">Calcular precio final</button>
+        <p id="resultadoDescuento"></p>
+    </div>
+
+    <!-- Ejercicio 4: Calificación final -->
+    <div class="container">
+        <h2>Calificación Final</h2>
+        <label for="parciales">Promedio parciales:</label>
+        <input type="number" id="parciales" placeholder="Promedio parciales">
+        <label for="examenFinal">Calificación examen final:</label>
+        <input type="number" id="examenFinal" placeholder="Examen final">
+        <label for="trabajoFinal">Calificación trabajo final:</label>
+        <input type="number" id="trabajoFinal" placeholder="Trabajo final">
+        <button onclick="calcularCalificacionFinal()">Calcular calificación</button>
+        <p id="resultadoCalificacion"></p>
+    </div>
+
+    <!-- Ejercicio 5: Calcular Edad -->
+    <div class="container">
+        <h2>Calcular Edad</h2>
+        <label for="anoNacimiento">Año de nacimiento:</label>
+        <input type="number" id="anoNacimiento" placeholder="Año de nacimiento">
+        <button onclick="calcularEdad()">Calcular edad</button>
+        <p id="resultadoEdad"></p>
+    </div>
+
+    <!-- Ejercicio 6: Palabras a Números -->
+    <div class="container">
+        <h2>Palabras a Números</h2>
+        <label for="palabras">Ingrese palabras separadas por comas (cero, uno, dos...):</label>
+        <input type="text" id="palabras" placeholder="Ej: uno, dos, tres">
+        <button onclick="palabrasANumeros()">Convertir a números</button>
+        <p id="resultadoPalabrasANumeros"></p>
+    </div>
+
+    <!-- Ejercicio 7: Horas Extras -->
+    <div class="container">
+        <h2>Pago Horas Extras</h2>
+        <label for="horasTrabajadas">Horas trabajadas:</label>
+        <input type="number" id="horasTrabajadas" placeholder="Horas trabajadas">
+        <label for="salarioPorHora">Salario por hora:</label>
+        <input type="number" id="salarioPorHora" placeholder="Salario por hora">
+        <button onclick="calcularHorasExtras()">Calcular pago total</button>
+        <p id="resultadoHorasExtras"></p>
+    </div>
+
+    <!-- Ejercicio 8: Utilidad por Antigüedad -->
+    <div class="container">
+        <h2>Utilidad por Antigüedad</h2>
+        <label for="antiguedad">Años de antigüedad:</label>
+        <input type="number" id="antiguedad" placeholder="Antigüedad">
+        <label for="salarioMensual">Salario mensual:</label>
+        <input type="number" id="salarioMensual" placeholder="Salario mensual">
+        <button onclick="calcularUtilidad()">Calcular utilidad</button>
+        <p id="resultadoUtilidad"></p>
+    </div>
+
+    <!-- Ejercicio 9: Validador de Formulario -->
+    <div class="container">
+        <h2>Validador de Formulario</h2>
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="comentarios">Comentarios (máx 50 caracteres):</label>
+            <textarea id="comentarios" maxlength="50" required></textarea>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+            <label>
+                <input type="checkbox" id="aceptoCondiciones" required> Acepto las condiciones del servicio
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="resultadoFormulario"></p>
+    </div>
+
+    <!-- Cargar el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
